@@ -8,7 +8,8 @@
     "test": "ng test",
     "test:debug": "ng test --browsers Chrome_with_debugging",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "gh-pages": "ng build --prod --base-href “https://corwinm.github.io/angular-playground/”"
   },
   "private": true,
   "dependencies": {
