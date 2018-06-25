@@ -1,8 +1,14 @@
-<pg-navigation-menu *ngIf="showMenu" (close)=toggleMenu()>
+<pg-navigation-menu *ngIf="showMenu" (close)=toggleMenu() (click)=toggleMenu()>
   Menu here
+  <pg-navigation-item label="Home" route=""></pg-navigation-item>
+  <pg-navigation-item label="Cat Grid" route="grid"></pg-navigation-item>
 </pg-navigation-menu>
 <div class="navbar">
   <img (click)=toggleMenu() src="https://cataas.com/cat/hat"> NG Playground
+  <div style="flex-grow: 1;"></div>
+  <a href="https://github.com/corwinm/angular-playground" target="_blank">
+    <img src="assets/GitHub-Mark-Light-64px.png" alt="github">
+  </a>
 </div>
 <div class="content-wrapper">
   <ng-content></ng-content>

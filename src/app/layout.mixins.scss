@@ -1,0 +1,19 @@
+$bp-tablet-min-width: 600px;
+$bp-desktop-min-width: 1250px;
+$bp-xl-desktop-min-width: 1600px;
+
+@mixin bp-mobile-max() {
+  @media screen and (max-width: $bp-tablet-min-width) { @content; }
+}
+
+@mixin bp-tablet-min() {
+  @media screen and (min-width: $bp-tablet-min-width) { @content; }
+}
+
+@mixin bp-desktop-min() {
+  @media screen and (min-width: $bp-desktop-min-width) { @content; }
+}
+
+@mixin bp-xl-desktop-min() {
+  @media screen and (min-width: $bp-xl-desktop-min-width) { @content; }
+}

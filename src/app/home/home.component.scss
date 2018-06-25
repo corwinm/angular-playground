@@ -1,0 +1,19 @@
+.spash {
+  display: inline-block;
+  max-height: 80vh;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 3px;
+  }
+}

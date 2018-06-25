@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  height: 80px;
+
+  a {
+    line-height: 80px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: background-color 300ms ease-in;
+    
+    &:hover {
+      background-color: rgba(0,0,0, .3);
+    }
+  }
+}

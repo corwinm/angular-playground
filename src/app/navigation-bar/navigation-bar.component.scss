@@ -2,7 +2,7 @@
   background-color: #2196f3;
   padding: 8px 10px;
   font-size: 30px;
-  width: 100vw;
+  width: calc(100vw - 16px);
   box-shadow: 0 0 5px black;
   z-index: 10;
   position: fixed;
@@ -13,9 +13,17 @@
   display: flex;
   align-items: center;
 
-  img {
+  > img {
     height: 80%;
     padding: 0 8px 0 0;
+  }
+
+  a {
+    height: 80%;
+
+    img {
+      height: 100%;
+    }
   }
 }
 
@@ -27,5 +35,5 @@
   max-width: 100%;
   margin: 0;
   z-index: 1;
-  background-color: #2196f3;
+  background-color: #c3e0f8;
 }

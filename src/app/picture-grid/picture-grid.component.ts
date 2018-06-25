@@ -6,9 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./picture-grid.component.scss']
 })
 export class PictureGridComponent implements OnInit {
+  tags = [
+    'hat',
+    'cute',
+    'box',
+    'jump',
+    'smile',
+    'eyes'
+  ];
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  catClicked() {
+    console.log('Cat Clicked');
   }
 }
