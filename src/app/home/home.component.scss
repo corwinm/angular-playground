@@ -1,5 +1,10 @@
+:host {
+  display: flex;
+  min-height: calc(100vh - 64px);
+  flex-direction: column;
+}
+
 .spash {
-  display: inline-block;
   max-height: 80vh;
   width: 100%;
   overflow: hidden;
@@ -15,5 +20,21 @@
     background-color: gray;
     padding: 5px;
     border-radius: 3px;
+  }
+}
+
+section:not(.spash) {
+  padding: 10px;
+  background: white;
+  color: black;
+  margin: 20px;
+  box-shadow: 0 0 3px black;
+}
+
+footer {
+  padding: 10px;
+
+  a {
+    text-decoration: none;
   }
 }
