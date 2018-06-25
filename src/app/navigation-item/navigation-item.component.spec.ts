@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavigationItemComponent } from './navigation-item.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('NavigationItemComponent', () => {
   let component: NavigationItemComponent;
@@ -8,7 +10,13 @@ describe('NavigationItemComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavigationItemComponent ]
+      declarations: [ NavigationItemComponent ],
+      imports: [
+        RouterTestingModule
+      ],
+      schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+      ]
     })
     .compileComponents();
   }));
