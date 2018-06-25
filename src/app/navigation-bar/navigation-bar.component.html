@@ -1,5 +1,8 @@
+<pg-navigation-menu *ngIf="showMenu" (close)=toggleMenu()>
+  Menu here
+</pg-navigation-menu>
 <div class="navbar">
-  <img src="https://cataas.com/cat/hat"> NG Playground
+  <img (click)=toggleMenu() src="https://cataas.com/cat/hat"> NG Playground
 </div>
 <div class="content-wrapper">
   <ng-content></ng-content>

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { PictureGridComponent } from './picture-grid/picture-grid.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PictureGridComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    NavigationMenuComponent
   ],
   imports: [
     BrowserModule,
