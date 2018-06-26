@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PictureGridComponent } from '../picture-grid/picture-grid.component';
 import { HomeComponent } from '../home/home.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'grid', component: PictureGridComponent }
+  { path: 'grid', loadChildren: '../lazy/lazy.module#LazyModule' },
+  { path: '**', redirectTo: ''}
 ];
 
 @NgModule({
