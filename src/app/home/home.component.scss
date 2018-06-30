@@ -1,3 +1,5 @@
+@import '../layout.mixins';
+
 :host {
   display: flex;
   min-height: 100vh;
@@ -11,6 +13,7 @@
 
   img {
     width: 100%;
+    height: calc(100vw * 5/8);
   }
 
   p {
@@ -33,8 +36,21 @@ section:not(.spash) {
 
 footer {
   padding: 10px;
+  background: rgba(0,0,0,0.2);
 
   a {
     text-decoration: none;
+  }
+}
+
+@include bp-tablet-min {
+  :host:before {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to top, transparent 40%, black 120%);
+    margin-bottom: -80px;
+    height: 80px;
+    width: 100%;
+    content: '';
   }
 }

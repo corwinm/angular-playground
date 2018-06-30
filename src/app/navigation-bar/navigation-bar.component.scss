@@ -23,6 +23,11 @@ $navbar-padding: 8px;
     height: 80%;
     padding: 0 8px 0 0;
     cursor: pointer;
+    transition: 200ms ease-in-out;
+    
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   a {
@@ -32,6 +37,12 @@ $navbar-padding: 8px;
       height: 100%;
     }
   }
+}
+
+.menu-title {
+  padding: 8px 10px;
+  font-size: 36px;
+  box-shadow: 0 0 5px black;
 }
 
 .content-wrapper {
@@ -47,8 +58,10 @@ $navbar-padding: 8px;
 
 @include bp-tablet-min() {
   .navbar {
-    position: relative;
+    position: absolute;
+    background: transparent;
     height: $navbar-large-height;
+    box-shadow: none;
   }
   .content-wrapper {
     padding-top: 0;

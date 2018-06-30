@@ -41,3 +41,13 @@
     }
   }
 }
+@include bp-tablet-min() {
+  .navbar {
+    height: 80px;
+    background: #2196f3;
+    transform: skewY(1.5deg);
+    margin-top: -20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px black;
+  }
+}

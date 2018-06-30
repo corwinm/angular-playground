@@ -11,10 +11,12 @@
   grid-template-columns: 300px 1fr;
   transition: 300ms ease-in;
   left: -300px;
+
   &.loaded {
     left: 0;
   }
   .menu {
     background-color: #2196f3;
+    overflow: hidden;
   }
 }
