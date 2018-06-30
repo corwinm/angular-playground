@@ -1,12 +1,18 @@
+@import "../layout.mixins";
+
+$navbar-small-height: 30px;
+$navbar-large-height: 50px;
+$navbar-padding: 8px;
+
 .navbar {
   background-color: #2196f3;
-  padding: 8px 10px;
+  padding: $navbar-padding 10px;
   font-size: 30px;
   width: calc(100vw - 16px);
   box-shadow: 0 0 5px black;
   z-index: 10;
   position: fixed;
-  height: 50px;
+  height: $navbar-small-height;
   top: 0;
   right: 0;
   left: 0;
@@ -16,6 +22,7 @@
   > img {
     height: 80%;
     padding: 0 8px 0 0;
+    cursor: pointer;
   }
 
   a {
@@ -28,12 +35,22 @@
 }
 
 .content-wrapper {
-  padding-top: 64px;
+  padding-top: $navbar-small-height + $navbar-padding * 2;
   position: relative;
-  min-height: calc(100% - 64px);
+  min-height: calc(100% - ($navbar-small-height + $navbar-padding * 2));
   height: auto !important;
   max-width: 100%;
   margin: 0;
   z-index: 1;
-  background-color: #c3e0f8;
+  background-color: rgb(250,250,250);
+}
+
+@include bp-tablet-min() {
+  .navbar {
+    position: relative;
+    height: $navbar-large-height;
+  }
+  .content-wrapper {
+    padding-top: 0;
+  }
 }

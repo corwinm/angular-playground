@@ -4,13 +4,14 @@
 
   a {
     line-height: 80px;
+    padding: 0 10px;
     display: block;
     text-decoration: none;
     color: white;
-    transition: background-color 300ms ease-in;
-    
+    transition: background-color 200ms ease-in;
+
     &:hover {
-      background-color: rgba(0,0,0, .3);
+      background-color: rgba(0,0,0,0.3);
     }
   }
 }
