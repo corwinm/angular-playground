@@ -1,28 +1,38 @@
-import { Component, OnInit, AfterViewInit, EventEmitter, Output, HostBinding } from '@angular/core';
+import { Component, EventEmitter, Output, Input } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
 
 @Component({
   selector: 'pg-navigation-menu',
   templateUrl: './navigation-menu.component.html',
-  styleUrls: ['./navigation-menu.component.scss']
+  styleUrls: ['./navigation-menu.component.scss'],
+  animations: [
+    trigger('loadedState', [
+      transition(':enter', [
+        style({ left: -300 }),
+        animate('0.2s ease', style({ left: 0 }))
+      ]),
+      state('in', style({left: '*'})),
+      transition(':leave', [
+        style({ left: '*' }),
+        animate(200, style({ left: -300 })),
+        animate(50, style({ opacity: 0 }))
+      ])
+    ])
+  ]
 })
-export class NavigationMenuComponent implements OnInit, AfterViewInit {
+export class NavigationMenuComponent {
 
-  @Output() close = new EventEmitter();
-
-  // TODO: Use Angular animations
-  @HostBinding('class.loaded') loaded = false;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  ngAfterViewInit() {
-    setTimeout(() => this.loaded = true, 20);
-  }
+  @Input() closed = true;
+  @Output() closedChange = new EventEmitter();
 
   shadowClicked() {
-    this.loaded = false;
-    setTimeout(() => this.close.emit(), 320);
+    this.closed = false;
+    this.closedChange.emit();
   }
 }

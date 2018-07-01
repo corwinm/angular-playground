@@ -1,4 +1,7 @@
-<div class="menu">
-  <ng-content></ng-content>
+<div *ngIf=closed
+  [@loadedState]>
+  <div class="menu">
+    <ng-content></ng-content>
+  </div>
+  <div class="shadow"></div>
 </div>
-<div class="shadow" (click)=shadowClicked()></div>
