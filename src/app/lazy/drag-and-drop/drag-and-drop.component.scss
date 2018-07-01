@@ -2,8 +2,9 @@
 
 @include bp-tablet-min {
   .header {
-    height: 80px;
+    height: 64px;
     background: black;
+    margin-bottom: 8px;
   }
 }
 
