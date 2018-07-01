@@ -108,6 +108,9 @@ export class DragAndDropComponent implements OnInit {
     ]
   ];
 
+  // Manually moving a peice and mobile support
+  selectedPeice = undefined;
+
   constructor() { }
 
   ngOnInit() {
@@ -131,6 +134,22 @@ export class DragAndDropComponent implements OnInit {
     const gamePeice = this.board[fromRow][fromCol];
     this.board[fromRow][fromCol] = undefined;
     this.board[row][col] = gamePeice;
+    this.selectedPeice = undefined;
+  }
+
+  manual(event, row, col) {
+    if (this.selectedPeice) {
+      // Setting down
+      const fromRow = this.selectedPeice.row;
+      const fromCol = this.selectedPeice.col;
+      const gamePeice = this.board[fromRow][fromCol];
+      this.board[fromRow][fromCol] = undefined;
+      this.board[row][col] = gamePeice;
+      this.selectedPeice = undefined;
+    } else if (this.board[row][col]) {
+      // Picking up
+      this.selectedPeice = {row, col};
+    }
   }
 
   debug(event, row, col) {

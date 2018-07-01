@@ -10,6 +10,7 @@
         class="game-peice"
         draggable="true"
         (dragstart)="dragStart($event, r, c)"
+        (click)="manual($event, r, c)"
       >
         <span [ngClass]="square?.color">{{ square && square.icon }}</span>
       </div>
