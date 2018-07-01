@@ -115,6 +115,9 @@ section {
         "details";
       grid-template-columns: 1fr;
 
+      h2 {
+        margin: 0;
+      }
       p {
         text-align: center;
       }
