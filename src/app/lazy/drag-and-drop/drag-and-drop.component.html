@@ -1,0 +1,18 @@
+<div class="header"></div>
+<div class="game-board">
+  <div *ngFor="let row of board; index as r">
+    <div *ngFor="let square of row; index as c"
+      class="square"
+      (dragover)="debug($event, r, c)"
+      (drop)="drop($event, r, c)"
+    >
+      <div
+        class="game-peice"
+        draggable="true"
+        (dragstart)="dragStart($event, r, c)"
+      >
+        <span [ngClass]="square?.color">{{ square && square.icon }}</span>
+      </div>
+    </div>
+  </div>
+</div>

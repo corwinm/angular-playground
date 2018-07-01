@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { LazyRoutingModule } from './lazy-routing.module';
 import { PictureGridComponent } from './picture-grid/picture-grid.component';
+import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import { PictureGridComponent } from './picture-grid/picture-grid.component';
     LazyRoutingModule
   ],
   declarations: [
-    PictureGridComponent
+    PictureGridComponent,
+    DragAndDropComponent
   ]
 })
 export class LazyModule { }
