@@ -3,7 +3,9 @@
   <div *ngFor="let row of board; index as r">
     <div *ngFor="let square of row; index as c"
       class="square"
-      (dragover)="debug($event, r, c)"
+      (dragleave)="debug($event, r, c)"
+      (dragenter)="debug($event, r, c)"
+      (dragover)="allowDrop($event, r, c)"
       (drop)="drop($event, r, c)"
     >
       <div

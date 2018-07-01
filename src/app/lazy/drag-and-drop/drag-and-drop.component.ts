@@ -126,6 +126,10 @@ export class DragAndDropComponent implements OnInit {
     }
   }
 
+  allowDrop(event, row, col) {
+    event.preventDefault();
+  }
+
   drop(event, row, col) {
     console.log(event);
     event.preventDefault();
@@ -153,7 +157,7 @@ export class DragAndDropComponent implements OnInit {
   }
 
   debug(event, row, col) {
-    // console.log(event);
-    event.preventDefault();
+    console.log(event.type);
+    // event.preventDefault();
   }
 }
