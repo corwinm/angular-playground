@@ -15,21 +15,23 @@
   margin: auto;
   width: 100vw;
   height: 100vw;
+  font-size: 8vw;
 
   @media screen and (orientation:portrait) and (min-width: 900px) {
     width: calc(100vh - 80px);
     height: calc(100vh - 80px);
+    font-size: 8vh;
   }
 
   @media screen and (orientation:landscape) and (min-width: 600px)  {
     width: calc(100vh - 80px);
     height: calc(100vh - 80px);
+    font-size: 8vh;
   }
 
   .game-peice {
     height: 100%;
     text-align: center;
-    font-size: 5vw;
   }
 
   > div {
