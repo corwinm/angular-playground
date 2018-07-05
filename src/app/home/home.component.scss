@@ -36,7 +36,7 @@ section:not(.spash) {
 }
 
 section {
-  &:nth-child(n + 1) {
+  &:not(:first-child) {
     position: relative;
     background: #2196f3;
 

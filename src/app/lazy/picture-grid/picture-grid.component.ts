@@ -12,7 +12,13 @@ export class PictureGridComponent implements OnInit {
     'box',
     'jump',
     'smile',
-    'eyes'
+    'eyes',
+    'cute',
+    'cute',
+    'cute',
+    'cute',
+    'cute',
+    'cute'
   ];
 
   constructor() { }
