@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { debounce } from 'rxjs/operators';
+import { fromEvent, interval } from 'rxjs';
+
 @Component({
   selector: 'pg-home',
   templateUrl: './home.component.html',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  screenResize = fromEvent(window, 'resize');
+  mobile = this.isMobile();
+
   constructor() { }
 
   ngOnInit() {
+    this.screenResize
+      .pipe(debounce(() => interval(1000)))
+      .subscribe(value => {
+        this.mobile = this.isMobile();
+      });
   }
 
+  isMobile() {
+    return window.innerWidth < 600;
+  }
 }

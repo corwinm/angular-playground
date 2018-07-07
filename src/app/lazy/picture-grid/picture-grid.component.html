@@ -1,7 +1,10 @@
 <div class="navbar"></div>
 <div class="grid-container">
   <div *ngFor="let tag of tags; index as i;" class="item">
-    <img [src]="'https://cataas.com/cat/' + tag + '?timestamp=' + i" (click)=catClicked()>
+    <img
+      [src]="'https://cataas.com/cat/' + tag + '?timestamp=' + i"
+      [alt]="'Cat' + tag"
+      (click)=catClicked()>
     <span>{{ tag }}</span>
   </div>
 </div>

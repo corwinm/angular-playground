@@ -22,7 +22,7 @@
     position: absolute;
     top: 150px;
     left: 20px;
-    background-color: gray;
+    background-color: #1277caaf;
     padding: 5px;
     border-radius: 3px;
   }
@@ -38,7 +38,7 @@ section:not(.spash) {
 section {
   &:not(:first-child) {
     position: relative;
-    background: #2196f3;
+    background: #1278ca;
 
     &:before,
     &:after {
@@ -126,6 +126,7 @@ section {
 }
 
 footer {
+  color: black;
   padding: 10px;
   background: rgba(0,0,0,0.2);
 

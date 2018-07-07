@@ -1,5 +1,8 @@
 <section class="spash">
-  <img src="https://cataas.com/cat/says/hello%20world!?width=800&height=500">
+  <img *ngIf="!mobile; else mobileSplash" src="https://cataas.com/cat/says/hello%20world!?width=800&height=500" alt="Hello World!">
+  <ng-template #mobileSplash>
+    <img src="https://cataas.com/cat/says/hello%20world!?width=200&height=125" alt="Hello World!">
+  </ng-template>
   <p>
     Welcome to my Angular playground.
   </p>
