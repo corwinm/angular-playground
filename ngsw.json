@@ -7,12 +7,12 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/angular-playground/0.3990c1e55e3d40f8317e.js",
+        "/angular-playground/0.5e869a9590ef84fcf302.js",
         "/angular-playground/favicon.ico",
         "/angular-playground/index.html",
-        "/angular-playground/main.7f4e0ca9c388b9196efc.js",
+        "/angular-playground/main.813a6ae8be5743d0a3c3.js",
         "/angular-playground/polyfills.9a5f6d04e0781d28c53e.js",
-        "/angular-playground/runtime.bce9680d4d82698c6203.js",
+        "/angular-playground/runtime.d2c296eabcdf2bac217c.js",
         "/angular-playground/styles.1732afc44bbb9cf9e1e0.css"
       ],
       "patterns": []
@@ -44,7 +44,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/angular-playground/0.3990c1e55e3d40f8317e.js": "42b78cd36af818ddd9805606e252423d5388ecc4",
+    "/angular-playground/0.5e869a9590ef84fcf302.js": "47f99ed915a153535b386b5b78a913e093020267",
     "/angular-playground/assets/GitHub-Mark-120px-plus.png": "8e4af8e0da1da6fb685e86c19afb5322d559a8ca",
     "/angular-playground/assets/GitHub-Mark-32px.png": "fabe53eb72f9b6d3d47cd95aff31ffc45c2fdbf8",
     "/angular-playground/assets/GitHub-Mark-64px.png": "b00f47d766170d5814e4a1270a3c534642923207",
@@ -60,12 +60,12 @@
     "/angular-playground/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/angular-playground/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/angular-playground/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/angular-playground/assets/vscode.png": "4d69c090253997a190ac698847ffcbfd6a9e4710",
+    "/angular-playground/assets/vscode.png": "1434f8594753aa34e5aac42a7c23ad4992a4f679",
     "/angular-playground/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/angular-playground/index.html": "ca7a0b3b6affc68c3d4c45a979cc3bd80b7cc1d4",
-    "/angular-playground/main.7f4e0ca9c388b9196efc.js": "f8809efef70bf69395184e9c96423eab9a272209",
+    "/angular-playground/index.html": "5b4379f1c041e37705c39b9f8a4fc18f72a12d65",
+    "/angular-playground/main.813a6ae8be5743d0a3c3.js": "a5f298c1bdb50a29e25e0ad9aee1ca3c9dd81250",
     "/angular-playground/polyfills.9a5f6d04e0781d28c53e.js": "2eae7edf54a88cf84ef080d0abee952969311584",
-    "/angular-playground/runtime.bce9680d4d82698c6203.js": "890db7f5e4435bf391c91ec60e58f3b94e0f8a11",
+    "/angular-playground/runtime.d2c296eabcdf2bac217c.js": "3f8546b8c9e1204e39af54272c15a1d84c635b5c",
     "/angular-playground/styles.1732afc44bbb9cf9e1e0.css": "c327de39f06724d79b40c40d8390270ded7c9b69"
   },
   "navigationUrls": [
