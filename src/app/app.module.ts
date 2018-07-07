@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
 import { NavigationItemComponent } from './navigation-item/navigation-item.component';
 import { HomeComponent } from './home/home.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
