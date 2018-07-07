@@ -1,0 +1,89 @@
+{
+  "configVersion": 1,
+  "index": "/angular-playground/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/angular-playground/0.c9ca710bdbdca3d1787e.js",
+        "/angular-playground/favicon.ico",
+        "/angular-playground/index.html",
+        "/angular-playground/main.07f07e7d6bca3463ad80.js",
+        "/angular-playground/polyfills.9a5f6d04e0781d28c53e.js",
+        "/angular-playground/runtime.f009158660ea0367bfc3.js",
+        "/angular-playground/styles.1732afc44bbb9cf9e1e0.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/angular-playground/assets/GitHub-Mark-120px-plus.png",
+        "/angular-playground/assets/GitHub-Mark-32px.png",
+        "/angular-playground/assets/GitHub-Mark-64px.png",
+        "/angular-playground/assets/GitHub-Mark-Light-120px-plus.png",
+        "/angular-playground/assets/GitHub-Mark-Light-32px.png",
+        "/angular-playground/assets/GitHub-Mark-Light-64px.png",
+        "/angular-playground/assets/angular.png",
+        "/angular-playground/assets/icons/icon-128x128.png",
+        "/angular-playground/assets/icons/icon-144x144.png",
+        "/angular-playground/assets/icons/icon-152x152.png",
+        "/angular-playground/assets/icons/icon-192x192.png",
+        "/angular-playground/assets/icons/icon-384x384.png",
+        "/angular-playground/assets/icons/icon-512x512.png",
+        "/angular-playground/assets/icons/icon-72x72.png",
+        "/angular-playground/assets/icons/icon-96x96.png",
+        "/angular-playground/assets/vscode.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/angular-playground/0.c9ca710bdbdca3d1787e.js": "e0b5eaa56213ae47b7bf171cef5bf5b4592751c8",
+    "/angular-playground/assets/GitHub-Mark-120px-plus.png": "8e4af8e0da1da6fb685e86c19afb5322d559a8ca",
+    "/angular-playground/assets/GitHub-Mark-32px.png": "fabe53eb72f9b6d3d47cd95aff31ffc45c2fdbf8",
+    "/angular-playground/assets/GitHub-Mark-64px.png": "b00f47d766170d5814e4a1270a3c534642923207",
+    "/angular-playground/assets/GitHub-Mark-Light-120px-plus.png": "5740f0d2ea93806516b9c646e6e166aa5c0b44d9",
+    "/angular-playground/assets/GitHub-Mark-Light-32px.png": "b2a79b392657b559776ce122c89e42c42970595f",
+    "/angular-playground/assets/GitHub-Mark-Light-64px.png": "a897bfa37a683b8d622fdf93f5535654350d83a1",
+    "/angular-playground/assets/angular.png": "f0191f8d50460c560d9e28b29e849b4f44ed0bf4",
+    "/angular-playground/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/angular-playground/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/angular-playground/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/angular-playground/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/angular-playground/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/angular-playground/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/angular-playground/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/angular-playground/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/angular-playground/assets/vscode.png": "4d69c090253997a190ac698847ffcbfd6a9e4710",
+    "/angular-playground/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/angular-playground/index.html": "bc69b5a9f9ba2031229c9326207d031592eeeab5",
+    "/angular-playground/main.07f07e7d6bca3463ad80.js": "6a1638376e176f14f19acbcbbc3d7656a4bb2801",
+    "/angular-playground/polyfills.9a5f6d04e0781d28c53e.js": "2eae7edf54a88cf84ef080d0abee952969311584",
+    "/angular-playground/runtime.f009158660ea0367bfc3.js": "6a3c828d33e3fc7a8cca6ad79f9fc8a2ff33a0a0",
+    "/angular-playground/styles.1732afc44bbb9cf9e1e0.css": "c327de39f06724d79b40c40d8390270ded7c9b69"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
