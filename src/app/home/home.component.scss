@@ -12,6 +12,7 @@
   overflow: hidden;
   margin-bottom: -55px;
   z-index: -1;
+  transform: translate(0, 0); // Hack to work on iPhone
 
   img {
     width: 100%;
