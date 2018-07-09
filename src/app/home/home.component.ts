@@ -10,6 +10,7 @@ import { fromEvent, interval } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
 
+  appleInstalled = (navigator as any).standalone;
   screenResize = fromEvent(window, 'resize');
   mobile = this.isMobile();
 
