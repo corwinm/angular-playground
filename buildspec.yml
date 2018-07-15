@@ -17,12 +17,10 @@ phases:
     commands:
       - echo Build started on `date`
       - git --version
-      - echo "https://corwinm:$TOKEN@github.com/corwinm/angular-playground.git" >> .git-credentials
-      - sudo git config credential.helper store
-      - sudo git config user.email $USERNAME
-      - sudo git config user.name $USERNAME
-      - sudo git config user.password $TOKEN
-      - sudo npm run gh-pages
+      - git config user.email "$USERNAME"
+      - git config user.name "$USERNAME"
+      - git config user.password "$TOKEN"
+      - npm run gh-pages
   post_build:
     commands:
       - echo Build completed on `date`
