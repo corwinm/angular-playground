@@ -18,6 +18,7 @@ phases:
       - echo Build started on `date`
       - git --version
       - sudo git config --global user.name $USERNAME
+      - sudo git config --global user.name "AWS CodeBuild"
       - sudo git config --global user.password $TOKEN
       - sudo npm run gh-pages
   post_build:
