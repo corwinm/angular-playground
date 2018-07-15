@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - git config --global credential.helper 'cache --timeout=3600'
       - echo npm install
       - npm install
   pre_build:
