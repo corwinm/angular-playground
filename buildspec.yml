@@ -1,5 +1,10 @@
 version: 0.2
 
+env:
+  parameter-store:
+    USERNAME: "GitHubUser"
+    TOKEN: "GitHubToken"
+
 phases:
   install:
     commands:
@@ -12,8 +17,9 @@ phases:
     commands:
       - echo Build started on `date`
       - git --version
-      - git config user.name $USERNAME
-      - git config user.password $TOKEN
+      - echo $USERNAME
+      - git config --global user.name $USERNAME
+      - git config --global user.password $TOKEN
       - npm run gh-pages
   post_build:
     commands:
