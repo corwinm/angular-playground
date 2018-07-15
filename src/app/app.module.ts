@@ -11,6 +11,7 @@ import { environment } from '../environments/environment';
 import { NavigationBarComponent } from './navigation/navigation-bar/navigation-bar.component';
 import { NavigationMenuComponent } from './navigation/navigation-menu/navigation-menu.component';
 import { NavigationItemComponent } from './navigation/navigation-item/navigation-item.component';
+import { NavigationButtonComponent } from './navigation/navigation-button/navigation-button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavigationItemComponent } from './navigation/navigation-item/navigation
     NavigationBarComponent,
     NavigationMenuComponent,
     NavigationItemComponent,
-    HomeComponent
+    HomeComponent,
+    NavigationButtonComponent
   ],
   imports: [
     BrowserModule,

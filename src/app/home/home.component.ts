@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.screenResize
-      .pipe(debounce(() => interval(1000)))
+      .pipe(debounce(() => interval(200)))
       .subscribe(value => {
         this.mobile = this.isMobile();
       });

@@ -1,0 +1,9 @@
+:host {
+  cursor: pointer;
+
+  &,
+  svg {
+    display: block;
+    height: 100%;
+  }
+}

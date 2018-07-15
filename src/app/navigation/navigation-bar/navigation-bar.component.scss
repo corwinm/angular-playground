@@ -19,10 +19,9 @@ $navbar-padding: 8px;
   display: flex;
   align-items: center;
 
-  > img {
-    height: 80%;
-    padding: 0 8px 0 0;
-    cursor: pointer;
+  > pg-navigation-button {
+    height: 60%;
+    margin: 0 8px 0 0;
     transition: 200ms ease-in-out;
 
     &:hover {
