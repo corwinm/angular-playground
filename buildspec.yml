@@ -17,6 +17,8 @@ phases:
     commands:
       - echo Build started on `date`
       - git --version
+      - echo "https://corwinm:$TOKEN@github.com/corwinm/angular-playground.git" >> .git-credentials
+      - sudo git config credential.helper store
       - sudo git config user.email $USERNAME
       - sudo git config user.name $USERNAME
       - sudo git config user.password $TOKEN
