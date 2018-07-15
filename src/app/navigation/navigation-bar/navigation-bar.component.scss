@@ -1,4 +1,4 @@
-@import "../layout.mixins";
+@import 'layout.mixins';
 
 $navbar-small-height: 30px;
 $navbar-large-height: 50px;
@@ -24,7 +24,7 @@ $navbar-padding: 8px;
     padding: 0 8px 0 0;
     cursor: pointer;
     transition: 200ms ease-in-out;
-    
+
     &:hover {
       transform: scale(1.2);
     }
