@@ -17,7 +17,9 @@ phases:
     commands:
       - echo Build started on `date`
       - git --version
-      - git config --global user.name $USERNAME && git config --global user.password $TOKEN && npm run gh-pages
+      - sudo git config --global user.name $USERNAME
+      - sudo git config --global user.password $TOKEN
+      - sudo npm run gh-pages
   post_build:
     commands:
       - echo Build completed on `date`
