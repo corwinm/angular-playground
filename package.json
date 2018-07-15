@@ -9,7 +9,7 @@
     "test:debug": "ng test --browsers Chrome_with_debugging",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gh-pages": "ng build --prod --base-href /angular-playground/ && angular-cli-ghpages",
+    "gh-pages": "ng build --prod --base-href /angular-playground/ && angular-cli-ghpages --no-silent",
     "hmr": "ng serve --configuration hmr"
   },
   "private": true,
