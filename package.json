@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href /angular-playground/",
     "test": "ng test",
     "test:debug": "ng test --browsers Chrome_with_debugging",
     "lint": "ng lint",
