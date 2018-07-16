@@ -17,11 +17,11 @@ phases:
     commands:
       - echo Build started on `date`
       - git --version
-      - git config --global user.email "$USERNAME"
-      - git config --global user.name "$USERNAME"
-      - git config --global user.password "$TOKEN"
+      # - git config --global user.email "$USERNAME"
+      # - git config --global user.name "$USERNAME"
+      # - git config --global user.password "$TOKEN"
       - npm run build
-      - npm run gh-pages -- --repo=https://corwinm:$TOKEN@github.com/corwinm/angular-playground.git
+      - npm run gh-pages -- --repo=https://corwinm:$TOKEN@github.com/corwinm/angular-playground.git --name="CodeBuild" --email=$USERNAME
   post_build:
     commands:
       - echo Build completed on `date`
