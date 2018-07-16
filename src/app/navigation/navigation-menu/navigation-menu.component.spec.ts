@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NavigationMenuComponent } from './navigation-menu.component';
 
@@ -8,7 +9,10 @@ describe('NavigationMenuComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavigationMenuComponent ]
+      declarations: [ NavigationMenuComponent ],
+      imports: [
+        NoopAnimationsModule
+      ]
     })
     .compileComponents();
   }));
