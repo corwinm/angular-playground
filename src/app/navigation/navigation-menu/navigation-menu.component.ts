@@ -14,7 +14,8 @@ import {
   animations: [
     trigger('loadedState', [
       transition(':enter', [
-        style({ left: -300 }),
+        style({ left: -300, opacity: 0  }),
+        animate(100, style({ opacity: 1 })),
         animate('0.2s ease', style({ left: 0 }))
       ]),
       state('in', style({left: '*'})),
