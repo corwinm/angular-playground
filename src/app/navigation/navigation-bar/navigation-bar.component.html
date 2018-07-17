@@ -4,6 +4,7 @@
   <pg-navigation-item label="😺 Cat Grid" route="grid"></pg-navigation-item>
   <pg-navigation-item label="♕ Drag and Drop" route="grid/drag-and-drop"></pg-navigation-item>
   <div style="flex: 1"></div>
+  <div class="version-label">Build: {{ buildNumber }}</div>
   <button class="install-btn" *ngIf="promptEvent" (click)="installPwa()">Install</button>
 </pg-navigation-menu>
 <div class="navbar">

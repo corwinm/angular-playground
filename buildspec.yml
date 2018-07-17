@@ -20,6 +20,7 @@ phases:
       # - git config --global user.email "$USERNAME"
       # - git config --global user.name "$USERNAME"
       # - git config --global user.password "$TOKEN"
+      - echo export class Version {public static readonly number = '`date`';} > src/version.ts
       - npm run build
       - npm run gh-pages -- --repo=https://corwinm:GH_TOKEN@github.com/corwinm/angular-playground.git --name="CodeBuild" --email=$USERNAME
   post_build:
