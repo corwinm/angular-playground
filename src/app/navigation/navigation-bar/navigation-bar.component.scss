@@ -66,3 +66,16 @@ $navbar-padding: 8px;
     padding-top: 0;
   }
 }
+
+.install-btn {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  background: #fafafa;
+  cursor: pointer;
+  transition: background-color 200ms ease-in;
+  
+  &:hover {
+    background: #9b9b9b;
+  }
+}

@@ -7,13 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationBarComponent implements OnInit {
   showMenu = false;
+  promptEvent: any;
 
-  constructor() { }
+  constructor() {
+    window.addEventListener('beforeinstallprompt', event => {
+      this.promptEvent = event;
+    });
+  }
 
   ngOnInit() {
   }
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
+  }
+
+  installPwa() {
+    this.promptEvent.prompt();
   }
 }

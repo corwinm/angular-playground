@@ -3,6 +3,8 @@
   <pg-navigation-item label="🏠 Home" route=""></pg-navigation-item>
   <pg-navigation-item label="😺 Cat Grid" route="grid"></pg-navigation-item>
   <pg-navigation-item label="♕ Drag and Drop" route="grid/drag-and-drop"></pg-navigation-item>
+  <div style="flex: 1"></div>
+  <button class="install-btn" *ngIf="promptEvent" (click)="installPwa()">Install</button>
 </pg-navigation-menu>
 <div class="navbar">
   <pg-navigation-button (click)=toggleMenu()></pg-navigation-button> NG Playground
