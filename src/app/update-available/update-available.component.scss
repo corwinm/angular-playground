@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  overflow: hidden;
+
+  div {
+    position: relative;
+    background: black;
+    color: white;
+    transform: rotate(-45deg);
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    padding: 10px;
+    bottom: -100px;
+    right: -100px;
+  }
+
+  button {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+}
