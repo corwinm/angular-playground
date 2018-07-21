@@ -1,23 +1,25 @@
 @import 'layout.mixins';
 
-:host {
+.parallax {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+
+  background: url('../../assets/image/home-splash.png');
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  z-index: -10;
 }
 
 .spash {
-  max-height: 80vh;
+  height: 35vh;
   width: 100%;
-  overflow: hidden;
-  margin-bottom: -55px;
   z-index: -1;
   transform: translate(0, 0); // Hack to work on iPhone
-
-  img {
-    width: 100%;
-    height: calc(100vw * 5/8);
-  }
 
   p {
     position: absolute;
@@ -31,7 +33,7 @@
   .mobile-splash {
     text-align: center;
     text-shadow: 1px 2px 5px black;
-    background: linear-gradient(to right, rgb(163, 38, 0), rgb(0, 104, 223));
+    // background: linear-gradient(to right, rgb(163, 38, 0), rgb(0, 104, 223));
     padding: 70px 0;
     line-height: 30px;
   }
@@ -138,7 +140,7 @@ section {
 footer {
   color: black;
   padding: 10px;
-  background: rgba(0,0,0,0.2);
+  background: rgb(224, 224, 224);
 
   a {
     text-decoration: none;
@@ -154,5 +156,9 @@ footer {
     height: 80px;
     width: 100%;
     content: '';
+  }
+
+  .spash {
+    height: 80vh;
   }
 }
