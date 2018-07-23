@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 import { Version } from 'src/version';
 
 @Component({
@@ -13,7 +14,7 @@ export class NavigationBarComponent implements OnInit {
   showMenu = false;
   promptEvent: any;
 
-  constructor() {
+  constructor(private location: Location) {
     window.addEventListener('beforeinstallprompt', event => {
       this.promptEvent = event;
     });
@@ -24,6 +25,10 @@ export class NavigationBarComponent implements OnInit {
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
+  }
+
+  goBack() {
+    this.location.back();
   }
 
   installPwa() {

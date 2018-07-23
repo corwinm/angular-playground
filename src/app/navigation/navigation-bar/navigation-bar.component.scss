@@ -28,6 +28,17 @@ $navbar-padding: 8px;
       transform: scale(1.2);
     }
   }
+  
+  pg-navigation-back {
+    display: none;
+  }
+
+  @media all and (display-mode: standalone) {
+    pg-navigation-back {
+      display: inline;
+      margin-right: 10px;
+    }
+  }
 
   a {
     height: 80%;

@@ -8,6 +8,7 @@
   <button class="install-btn" *ngIf="promptEvent" (click)="installPwa()">Install</button>
 </pg-navigation-menu>
 <div class="navbar">
+  <pg-navigation-back (click)=goBack()></pg-navigation-back>
   <pg-navigation-button (click)=toggleMenu()></pg-navigation-button> NG Playground
   <div style="flex-grow: 1;"></div>
   <a href="https://github.com/corwinm/angular-playground" target="_blank" rel="noopener">

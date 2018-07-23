@@ -5,6 +5,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
 import { NavigationItemComponent } from './navigation-item/navigation-item.component';
 import { NavigationButtonComponent } from './navigation-button/navigation-button.component';
+import { NavigationBackComponent } from './navigation-back/navigation-back.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { NavigationButtonComponent } from './navigation-button/navigation-button
     NavigationBarComponent,
     NavigationMenuComponent,
     NavigationItemComponent,
-    NavigationButtonComponent
+    NavigationButtonComponent,
+    NavigationBackComponent
   ],
   exports: [
     NavigationBarComponent
