@@ -14,14 +14,14 @@ import {
   animations: [
     trigger('loadedState', [
       transition(':enter', [
-        style({ left: -300, opacity: 0  }),
+        style({ right: -300, opacity: 0  }),
         animate(100, style({ opacity: 1 })),
-        animate('0.2s ease', style({ left: 0 }))
+        animate('0.2s ease', style({ right: 0 }))
       ]),
-      state('in', style({left: '*'})),
+      state('in', style({right: '*'})),
       transition(':leave', [
-        style({ left: '*' }),
-        animate(200, style({ left: -300 })),
+        style({ right: '*' }),
+        animate(200, style({ right: -300 })),
         animate(50, style({ opacity: 0 }))
       ])
     ])

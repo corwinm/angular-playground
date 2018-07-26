@@ -10,7 +10,7 @@ import { Version } from 'src/version';
 export class NavigationBarComponent implements OnInit {
 
   buildNumber = Version.number;
-
+  appleInstalled = (navigator as any).standalone;
   showMenu = false;
   promptEvent: any;
 

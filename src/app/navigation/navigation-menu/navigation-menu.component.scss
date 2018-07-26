@@ -4,12 +4,14 @@
   width: calc(100vw + 300px);
   top: 0;
   bottom: 0;
+  right: 0;
   z-index: 12;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 1fr 300px;
+  color: rgb(37, 37, 37);
 
   .menu {
-    background-color: #1278ca;
+    background-color: #fdfdfd;
     overflow: hidden;
     height: 100%;
     display: flex;
@@ -17,6 +19,6 @@
   }
 
   .shadow {
-    background: rgba(255, 255,255, .8);
+    background: rgba(29, 29, 29, 0.5);
   }
 }

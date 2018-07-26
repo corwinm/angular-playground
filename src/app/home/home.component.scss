@@ -22,20 +22,20 @@
   transform: translate(0, 0); // Hack to work on iPhone
 
   p {
-    position: absolute;
-    top: 150px;
-    left: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 30% auto;
     background-color: #1277caaf;
     padding: 5px;
     border-radius: 3px;
-  }
 
-  .mobile-splash {
-    text-align: center;
-    text-shadow: 1px 2px 5px black;
-    // background: linear-gradient(to right, rgb(163, 38, 0), rgb(0, 104, 223));
-    padding: 70px 0;
-    line-height: 30px;
+    @include bp-tablet-min {
+      position: absolute;
+      top: 150px;
+      left: 20px;
+      margin: auto;
+      width: auto;
+    }
   }
 }
 
@@ -140,7 +140,7 @@ section {
 footer {
   color: black;
   padding: 10px;
-  background: rgb(224, 224, 224);
+  background: rgb(255, 255, 255);
 
   a {
     text-decoration: none;

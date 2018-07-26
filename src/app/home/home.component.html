@@ -1,17 +1,10 @@
 <div class="parallax">
 
 <section class="spash">
-  <div *ngIf="!mobile; else mobileSplash">
-    <p>
-      Welcome to my Angular playground.
-    </p>
-  </div>
-  <ng-template #mobileSplash>
-    <div class="mobile-splash">
-      Welcome to my Angular playground.
-      <span *ngIf=appleInstalled>Thank you for installing my sample app!</span>
-    </div>
-  </ng-template>
+  <p>
+    Welcome to my Angular playground.
+    <span *ngIf=installed>Thank you for installing my sample app!</span>
+  </p>
 </section>
 <section [style.text-align]="'center'">
   I use this place to test out web technologies with a focus on Angular 2+
