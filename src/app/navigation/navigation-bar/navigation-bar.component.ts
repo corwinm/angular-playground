@@ -17,6 +17,7 @@ export class NavigationBarComponent implements OnInit {
   constructor(private location: Location) {
     window.addEventListener('beforeinstallprompt', event => {
       this.promptEvent = event;
+      event.preventDefault();
     });
   }
 
@@ -33,5 +34,6 @@ export class NavigationBarComponent implements OnInit {
 
   installPwa() {
     this.promptEvent.prompt();
+    this.promptEvent = undefined;
   }
 }
