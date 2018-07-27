@@ -1,6 +1,6 @@
 @import 'layout.mixins';
 
-$navbar-small-height: 30px;
+$navbar-small-height: 40px;
 $navbar-large-height: 50px;
 $navbar-padding: 8px;
 
@@ -19,8 +19,16 @@ $navbar-padding: 8px;
   display: flex;
   align-items: center;
 
-  > pg-navigation-button {
+  pg-navigation-button,
+  pg-navigation-back {
     height: 60%;
+  }
+
+  pg-navigation-back {
+    margin: 0 8px 0 0;
+  }
+
+  pg-navigation-button {
     margin: 0 8px 0 16px;
     transition: 200ms ease-in-out;
 
@@ -48,7 +56,7 @@ $navbar-padding: 8px;
 .content-wrapper {
   padding-top: $navbar-small-height + $navbar-padding * 2;
   position: relative;
-  min-height: calc(100% - ($navbar-small-height + $navbar-padding * 2));
+  min-height: calc(100% - $navbar-small-height + $navbar-padding * 2);
   height: auto !important;
   max-width: 100%;
   margin: 0;
