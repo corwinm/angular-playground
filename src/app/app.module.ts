@@ -14,7 +14,6 @@ import { UpdateAvailableComponent } from './update-available/update-available.co
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     UpdateAvailableComponent
   ],
   imports: [
