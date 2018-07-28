@@ -3,8 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 
 const appRoutes: Routes = [
-  // { path: '', loadChildren: '../home/home.module#HomeModule' },
-  // { path: '', loadChildren: '../home/home.module#HomeModule' },
   { path: 'grid', loadChildren: '../lazy/lazy.module#LazyModule' },
   { path: '**', redirectTo: ''}
 ];
