@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { environment } from '../environments/environment';
 import { NavigationModule } from './navigation/navigation.module';
 import { UpdateAvailableComponent } from './update-available/update-available.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { UpdateAvailableComponent } from './update-available/update-available.co
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HomeModule,
     AppRoutingModule,
     HttpClientModule,
     NavigationModule,
