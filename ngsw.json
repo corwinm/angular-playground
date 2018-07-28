@@ -8,6 +8,7 @@
       "updateMode": "prefetch",
       "urls": [
         "/angular-playground/0.18d6fbec212d28d773a6.js",
+        "/angular-playground/1.2a0d866d944327938758.js",
         "/angular-playground/assets/GitHub-Mark-120px-plus.png",
         "/angular-playground/assets/GitHub-Mark-32px.png",
         "/angular-playground/assets/GitHub-Mark-64px.png",
@@ -55,9 +56,9 @@
         "/angular-playground/assets/vscode.png",
         "/angular-playground/favicon.ico",
         "/angular-playground/index.html",
-        "/angular-playground/main.4f3163c246f814d28201.js",
-        "/angular-playground/polyfills.9a5f6d04e0781d28c53e.js",
-        "/angular-playground/runtime.c409938b987b4c752f17.js",
+        "/angular-playground/main.25e58b06b1261f341a36.js",
+        "/angular-playground/polyfills.2a9c99767f1cc5e74f44.js",
+        "/angular-playground/runtime.1b377b153f3926826730.js",
         "/angular-playground/styles.1732afc44bbb9cf9e1e0.css"
       ],
       "patterns": []
@@ -70,9 +71,22 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "cats",
+      "patterns": [
+        "https:\\/\\/cataas\\.com\\/cat\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "timeoutMs": 60000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/angular-playground/0.18d6fbec212d28d773a6.js": "fb231f04b4c30a1201a86243879e50ed15db8208",
+    "/angular-playground/1.2a0d866d944327938758.js": "5dad6041caa5c05cd9f3502c755d1aa14e60bb11",
     "/angular-playground/assets/GitHub-Mark-120px-plus.png": "8e4af8e0da1da6fb685e86c19afb5322d559a8ca",
     "/angular-playground/assets/GitHub-Mark-32px.png": "fabe53eb72f9b6d3d47cd95aff31ffc45c2fdbf8",
     "/angular-playground/assets/GitHub-Mark-64px.png": "b00f47d766170d5814e4a1270a3c534642923207",
@@ -119,10 +133,10 @@
     "/angular-playground/assets/image/home-splash.png": "8e767819d76d697feee24550520bee47d67f74dc",
     "/angular-playground/assets/vscode.png": "1434f8594753aa34e5aac42a7c23ad4992a4f679",
     "/angular-playground/favicon.ico": "51147a928e06309111bf6e5925ef89f78d235dc9",
-    "/angular-playground/index.html": "6fd4abffaea7c9099bd0186111560feb5f541a54",
-    "/angular-playground/main.4f3163c246f814d28201.js": "7f3153f6a79539ed72e85fb0080910dff918b7cc",
-    "/angular-playground/polyfills.9a5f6d04e0781d28c53e.js": "2eae7edf54a88cf84ef080d0abee952969311584",
-    "/angular-playground/runtime.c409938b987b4c752f17.js": "cf6a77e42d576a66fc714348a62540add4e792d5",
+    "/angular-playground/index.html": "9d354f30278d65d4207a54ccd9c3f9f4b0714e21",
+    "/angular-playground/main.25e58b06b1261f341a36.js": "d2e85dae9d37448e62800f1c27a331e556fff80c",
+    "/angular-playground/polyfills.2a9c99767f1cc5e74f44.js": "4487f7b11d189fd9e6c7c77fdf92fc31bf564fc2",
+    "/angular-playground/runtime.1b377b153f3926826730.js": "099c4af5cf0d6914aa4d062479c0f2d176e1c574",
     "/angular-playground/styles.1732afc44bbb9cf9e1e0.css": "c327de39f06724d79b40c40d8390270ded7c9b69"
   },
   "navigationUrls": [
